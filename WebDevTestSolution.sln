@@ -3,13 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2000
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Website dev testing", "Website dev testing\Website dev testing.csproj", "{C0475B47-5096-4B4C-89AE-B38AB5CAF2A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Website dev testing", "Website dev testing\Website dev testing.csproj", "{C0475B47-5096-4B4C-89AE-B38AB5CAF2A7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{02994A9F-A4E6-4609-B8B4-DADF91BFCF74}"
 	ProjectSection(SolutionItems) = preProject
 		HTMLPage1.html = HTMLPage1.html
 		HTMLPage2.html = HTMLPage2.html
 		Script1.js = Script1.js
+		StyleSheet1.css = StyleSheet1.css
 	EndProjectSection
 EndProject
 Global

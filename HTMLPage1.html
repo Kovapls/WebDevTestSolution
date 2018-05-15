@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+﻿<!DOCTYPE html> <!--for xhtml, you will need a more specific doctype-->
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -7,6 +7,34 @@
     <title>
         <!--Title goes here--> Working on web stuff here - page one
     </title>
+    <style type="text/css"> /*This is a CSS comment*/
+
+        /*element {attribute:value to change to}*/
+        p {color:orangered;
+           font-family:Arial;
+           line-height:170%; /*This defines space between paragraphs in percentages*/
+           text-indent:25px; /*indents by a number of pixels*/
+        }
+        body {
+            /*(background-image: url(ganker-fighting-robot-black_1.jpg);) changes to image as a background*/
+            /*(background-repeat:no-repeat;) prevents background from repeating, can also be repeated with repeat-y or repeat-x*/
+            /*(background-position:10px 60px;) moves an image x pixels from the left and y down. Can also be done by percentage from places*/ 
+            background-color:lightsteelblue;/*background-color changes the whole page*/
+            color: seagreen;
+        }
+
+        h1 {color:#330000; /*Colors can also be defined by RGB values and hex codes*/
+        }
+
+        ul {font-weight:600; /*This lets you change the boldness of fonts. Default is 500. You can also write 'bold'*/
+        }
+
+        ol {font-style:italic; /*lets you italicize fonts*/
+        }
+
+        h3 {text-align: center; /*Lets you align text left right, centered or justified*/
+        } 
+    </style>
 </head>
 
 <body>
@@ -14,7 +42,14 @@
 
     <a href="#name of reference point to jump to goes here">ref</a>
 
-    <!--<h1>Header1</h1> <h2>H2</h2><h3>H3</h3><h4>H4</h4><h5>H5</h5><h6>H6</h6>-->
+    <p>
+        <h1>Header1</h1> 
+        <h2>H2</h2>
+        <h3>H3</h3>
+        <h4>H4</h4>
+        <h5>H5</h5>
+        <h6>H6</h6>
+    </p>
 
     <hr /> <!--horizontal rule to create area breaks-->
 
@@ -26,13 +61,72 @@
     <p>Paragraph two</p> <br />
     Paragraph two line one<br />
 
+    <!--tables below-->
+    <table border="1">
+        <!--border attribute defines the borders of the table-->
+        <tr>
+            <th>First col</th> <!--defines table header-->
+            <th>Second col</th>
+            <th>Third col</th>
+        </tr>
+        <tr>
+            <td>First row</td><!--to define a row-->
+            <td> in first column</td>
+            <td> in second column</td>
+        </tr>
+        <tr>
+            <td>Second row</td>
+            <td>in first column</td>
+            <td>in second column</td>
+        </tr>
+    </table>
+
+    <!--table width can be done in a flat pixel amount, or a percentage (like 30%) of their screen-->
+    <table border="1" width="500" cellpadding="10" cellspacing="10">
+        <!--padding defines distance between data in cells and the border-->
+        <!--spacing defines distance between cells themselves-->
+        <tr>
+            <th colspan="2">Stuff</th> <!--colspan lets you define multiple columns of use for one piece of data-->
+        </tr>
+        <tr>
+            <th>Why</th>
+            <th>How</th>
+        </tr>
+        <tr>
+            <td>Yes</td>
+            <td>Okay</td>
+        </tr>
+        <tr>
+            <td>Also yes</td>
+            <td>But not okay</td>
+        </tr>
+    </table>
+
+    <!--lists below-->
+
+    <ul><!--Defines an unordered list, this shows up as a bullet point list-->
+        <li> <!--defines a list item-->
+            Item 1
+        </li>
+        <li>
+            Item2
+        </li>
+    </ul>
+
+    <ol><!--defines ordered list, this specifies a list with numbers-->
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ol>
+
+
+
     <a href="http:lmgtfy.com/?q=website"><img src="website image.jpg" height="300" /></a> <!--img tag must ALWAYS have src attribute-->
     <!--height and width attributes can also be defined. -->
     <!--This is not ideal, as the full file size will be downloaded each time and manually shrunk-->
 
     <a name="name of reference point to jump to goes here">ref end</a>
 
-    <a href="mailto:emailadress@email.com" title="tooltip example">Email</a>
+    <a href="mailto:emailadress@email.com" title="tooltip example">Email</a> <!--this is kind of an inefficient way of doing a contact-->
 
 </body>
 </html>
