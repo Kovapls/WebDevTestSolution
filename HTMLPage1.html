@@ -24,6 +24,7 @@
         }
 
         h1 {color:#330000; /*Colors can also be defined by RGB values and hex codes*/
+            margin:25px; /*this defines the margin, the space between elements*/
         }
 
         ul {font-weight:600; /*This lets you change the boldness of fonts. Default is 500. You can also write 'bold'*/
@@ -33,7 +34,61 @@
         }
 
         h3 {text-align: center; /*Lets you align text left right, centered or justified*/
-        } 
+        }
+
+        h2 {
+            background-color: yellow; /*padding is the space between the content, and the edges all inside the element*/
+            padding-top: 30px; /*defines padding, can be done all 4 at once with padding: top right bottom left*/
+            padding-bottom: 20px;
+            border-color:red;  /*these three define borders*/
+            border-width:3px; 
+            border-style:groove;
+            border-top-color:forestgreen; /*you can also define borders for specific sides like so*/
+        }
+
+        h4 {background-color:red;
+            color:white;
+            width:350px; /*sets the element to only span a certain distance across the screen*/
+            height:40px; /*can be done with height as well, though this is used less*/
+
+        }
+
+        a:link {color:darkviolet; /*default for when a link has never been clicked or seen*/
+        }
+
+        a:visited{color:cornsilk; /*for when you have visited the site before*/
+        }
+        a:hover{background-color:blue; /*for when you mouseover a link*/
+                color:white;
+                text-decoration:underline;
+                font-weight:bold;
+        }
+
+        a:active{background-color: orange; /*for when you press down and hold on a link*/
+        }
+
+        table {border: 3px solid blue; /*to style tables*/
+        }
+
+        tr {background-color:yellow; /*to style by rows*/
+        }
+
+        td {border:2px dashed gold; /*to style by individual cells (please note, this doesn't override the table row or table styling)*/
+        }
+
+        ul {list-style-type:armenian; /*to style the bullets on the bullet points*/
+        }
+
+        span {font-weight:bold; /*used to style a specific section surrounded by the span tags*/
+              color:dodgerblue;
+        }
+
+        div{border: 2px solid red; /*creates boxes for things to be repostioned (Note, this is relative to the top left of the element)*/
+            position:absolute;
+            width:300px;
+            top:40px; /*defines the amount of pixels from the top*/
+            left:35px; /*defines the amount of pixels from the left*/
+        }
     </style>
 </head>
 
@@ -51,6 +106,12 @@
         <h6>H6</h6>
     </p>
 
+    <p>
+        <div>DIV EXPLANATION TEXT HNNNNNG</div>
+    </p>
+    
+
+
     <hr /> <!--horizontal rule to create area breaks-->
 
     <strong>Line break <a href="http://lmgtfy.com/?q=one">one</strong></a><br /> <!--strong tags to bold-->
@@ -59,7 +120,7 @@
     <em>Line break two</em><br /><!--em tags to italicize-->
 
     <p>Paragraph two</p> <br />
-    Paragraph two line one<br />
+    Paragraph two line <span>one</span><br />
 
     <!--tables below-->
     <table border="1">
